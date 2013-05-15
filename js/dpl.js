@@ -11,7 +11,7 @@ $('.thumbnail').click(function (e){
     var id = dpl.attr("data-id");
     var type = dpl.attr("data-type");
     updateLoading('正在加载模版资源...');
-    showPop($(this).attr("title"));
+    showPop($(this).attr("title"), id);
 
     getHTML(type, id, function (){
         getCSS(type, id, function (){
@@ -85,11 +85,12 @@ function showDpl(){
     $('#J-copy-css-tms').css("visibility", "visible");
 }
 
-function showPop(title){
+function showPop(title, id){
     $('#modal h3').html(title);
     $('#modal').modal('show');
     $('#J_modal_tab a:first').tab('show');
     $("#J-copied-tip").css("visibility", "hidden");
+    id && $('#J-preview').attr("href", "dpl/"+id+"/preview.html");
 }
 
 function appendContent(content){

@@ -191,6 +191,21 @@ function getCategories(){
       echo "<div class=\"alert alert-error\">保存TMS代码失败</div>";
     }
   }
+
+  //写入预览页面
+  if($created_tem_dir){
+      $head_handle = fopen($dpl_dir."/head.php", 'r');
+      $footer_handle = fopen($dpl_dir."/footer.php", 'r');
+      $head = fread($head_handle, filesize($dpl_dir."/head.php"));
+      $footer = fread($footer_handle, filesize($dpl_dir."/footer.php"));
+      $preview = fopen($tem_dir."/preview.html", 'w+');
+      $writed = fwrite($preview, $head.$html.$css.$js.$footer);
+      if($writed>0){
+        echo "<div class=\"alert alert-success\">已生成预览页面</div>";
+      }else{
+        echo "<div class=\"alert alert-error\">生成预览页面失败</div>";
+      }
+  }
 ?>
 <a href="<?php echo basename(__FILE__); ?>" class="btn btn-primary">再来一个模版</a>
 <?php

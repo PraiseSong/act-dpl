@@ -156,6 +156,7 @@
                 <li><a href="#css" data-toggle="tab">CSS</a></li>
                 <li><a href="#tms" data-toggle="tab">TMS</a></li>
                 <li><a href="#js" data-toggle="tab">JS</a></li>
+                <li><a href="javascript:void(0)" target="_blank" id="J-preview">预览</a></li>
             </ul>
             <div class="tab-content">
                 <div class="tab-pane active" id="html">
