@@ -1,6 +1,7 @@
 <?php
 ini_set("display_errors", "1");
 error_reporting(E_ALL);
+date_default_timezone_set('Asia/Shanghai');
 
 $dpl_dir = "dpl";
 
@@ -88,6 +89,12 @@ function getCategories(){
           echo "no";
       }
       exit;
+    }
+
+    //生成随机文件名
+    if($action == "generate_temName"){
+      $date = new DateTime();
+      exit(md5($date->format('Y-m-d H:i:s')));
     }
 ?>
 <!DOCTYPE html>
@@ -199,7 +206,7 @@ function getCategories(){
       $head = fread($head_handle, filesize($dpl_dir."/head.php"));
       $footer = fread($footer_handle, filesize($dpl_dir."/footer.php"));
       $preview = fopen($tem_dir."/preview.html", 'w+');
-      $writed = fwrite($preview, $head.$html.$css.$js.$footer);
+      $writed = fwrite($preview, $head.$html."<style type=\"text/css\">".$css."</style>"."<script type=\"text/javascript\">".$js."</script>".$footer);
       if($writed>0){
         echo "<div class=\"alert alert-success\">已生成预览页面</div>";
       }else{
@@ -225,7 +232,7 @@ function getCategories(){
           </tr>
           <tr>
               <td>模版文件夹(英文)名称： </td>
-              <td><input type="text" name="en_name" placeholder="模版文件夹(英文)名称" pattern="[a-z|A-Z|-|0-9]+" required></td>
+              <td><input type="text" name="en_name" placeholder="模版文件夹(英文)名称" pattern="[a-z|A-Z|-|0-9]+" required><a href="javascript:void(0)" id="J-generate-temName">亲，给我来个名称</a></td>
           </tr>
           <tr>
               <td>缩略图： </td>
@@ -358,6 +365,19 @@ $('input[name=en_name]').blur(function (){
           if(data === "yes"){
               node.after("<div class=\"alert alert-error\" style=\"margin-top:5px;\">模版文件夹重命啦！</div>");
               node.focus();
+          }
+      }
+  });
+});
+
+$('#J-generate-temName').click(function (e){
+  $.ajax("submit_tem.php", {
+      type: "post",
+      data: "action=generate_temName",
+      success: function (data){
+          data = $.trim(data);
+          if(data){
+              $('input[name=en_name]').val(data);
           }
       }
   });
