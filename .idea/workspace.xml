@@ -22,19 +22,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="dpls.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dpls/dpls.html">
+      <file leaf-file-name="submit_tem.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/submit_tem.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="221" column="14" selection-start="11243" selection-end="13053" vertical-scroll-proportion="0.4883721">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dpls.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dpls/dpls.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="23" selection-start="0" selection-end="1385" vertical-scroll-proportion="0.0">
+            <state line="377" column="77" selection-start="11415" selection-end="11415" vertical-scroll-proportion="0.6858345">
               <folding />
             </state>
           </provider>
@@ -156,7 +147,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="f25ebdaba4a994367393b7cf91cf9ea9" />
+              <option name="myItemId" value="6440ce3213f73e1a3723825c72008cb5" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -501,30 +492,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/submit_tem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="234" column="175" selection-start="6564" selection-end="6564" vertical-scroll-proportion="0.34922862">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dpls/dpls.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="23" selection-start="0" selection-end="1385" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dpl/f25ebdaba4a994367393b7cf91cf9ea9/self.config">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="98" selection-start="66" selection-end="98" vertical-scroll-proportion="0.0">
+        <state line="46" column="23" selection-start="0" selection-end="1385" vertical-scroll-proportion="0.22865014">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dpls/dpls.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="14" selection-start="11243" selection-end="13053" vertical-scroll-proportion="0.4883721">
+        <state line="221" column="14" selection-start="11243" selection-end="13053" vertical-scroll-proportion="0.55813956">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/submit_tem.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="377" column="77" selection-start="11415" selection-end="11415" vertical-scroll-proportion="0.6858345">
           <folding />
         </state>
       </provider>

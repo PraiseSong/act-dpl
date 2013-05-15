@@ -371,6 +371,13 @@ $('input[name=en_name]').blur(function (){
   });
 });
 
+$('input[name=thumb]').blur(function (){
+  var val = $.trim($(this).val());
+  if(!val){return;}
+  $(this).parent().find('.thumb-box').remove();
+  $(this).after("<div class=\"thumb-box\" style=\"margin-top:5px;width:300px;\"><img data-src=\"holder.js/300x200\" src=\""+val+"\" /></div>");
+});
+
 $('#J-generate-temName').click(function (e){
   $.ajax("submit_tem.php", {
       type: "post",
