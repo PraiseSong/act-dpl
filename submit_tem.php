@@ -232,7 +232,7 @@ function getCategories(){
           </tr>
           <tr>
               <td>模版文件夹(英文)名称： </td>
-              <td><input type="text" name="en_name" placeholder="模版文件夹(英文)名称" pattern="[a-z|A-Z|-|0-9]+" required><a href="javascript:void(0)" id="J-generate-temName">亲，给我来个名称</a></td>
+              <td><input type="text" name="en_name" placeholder="模版文件夹(英文)名称" pattern="[a-z|A-Z|-|0-9]+" required><a href="javascript:void(0)" id="J-generate-temName">亲，给哥来个随机名称</a></td>
           </tr>
           <tr>
               <td>缩略图： </td>
@@ -354,6 +354,7 @@ $('#J-submit').click(function (e){
 
 $('input[name=en_name]').blur(function (){
   var val = $.trim($(this).val());
+  if(!val){return;}
   var node = $(this);
   $(this).val(val);
   $.ajax("submit_tem.php", {
