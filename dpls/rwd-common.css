@@ -1,0 +1,85 @@
+/*页头页尾*/
+/*小于990*/
+body{
+    -webkit-text-size-adjust: none;
+}
+@media screen and (max-width: 989px){
+    #J_SnMyBrand, .sn-quick-menu .cart s{
+        background: none;
+    }
+    #footer-otherlink, #payment, #seller, .go-home, .sn-mytaobao, .sn-sitemap, .sn-mcate, .sn-mobile, .sn-home, .sn-login-info .sn-identity, .sn-point, .j_Message, .sn-login-info .sn-msg-box{
+        display: none;
+    }
+    .sn-quick-menu .sn-mybrand .sn-mybrand-link{
+        padding-left: 0;
+    }
+    .sn-quick-menu .cart{
+        padding-left: 5px;
+    }
+    #mall-desc #ensure, #mall-desc #beginner{
+        width: 50%;
+    }
+    #mall-desc #beginner dt{
+        margin-right: 0;
+    }
+    .headerLayout, #sn-bd, #copyright, #mall-desc{
+        width: 768px;
+    }
+    #mallSearch{
+        width: 450px;
+    }
+    #mq{
+        width: 360px;
+    }
+    #page, #page.mallChn, #site-nav, #page #header{
+        min-width: 768px;
+    }
+}
+
+/*小于768*/
+@media screen and (max-width: 767px){
+    #header{
+        height: auto;
+    }
+    #mallLogo{
+        float: none;
+        width: 190px;
+        margin: 0 auto;
+    }
+    .headerLayout, #sn-bd, #copyright, #mall-desc{
+        width: 480px;
+    }
+    #mallSearch{
+        width: 470px;
+        margin: 0 auto 10px;
+        height: auto;
+        float: none;
+    }
+    #mq{
+        width: 380px;
+    }
+    #page, #page.mallChn, #site-nav, #page #header{
+        min-width: 480px;
+    }
+}
+/*小于480*/
+@media screen and (max-width: 479px){
+    .headerLayout, #sn-bd, #copyright, #mall-desc{
+        width: 320px;
+    }
+    #mallSearch{
+        width: 310px;
+        margin: 0 auto 10px;
+        height: auto;
+        float: none;
+    }
+    #mq{
+        width: 220px;
+    }
+    #page, #page.mallChn, #site-nav, #page #header{
+        min-width: 210px;
+    }
+    .sn-quick-menu .cart{
+        display: none;
+    }
+}

@@ -1,0 +1,76 @@
+.floatBox{
+    zoom: 1;
+}
+.floatBox:after{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+
+.c-m1{
+    width: 490px;
+    height: 354px;
+}
+.c-m1 .product{
+    width: 244px;
+    height: 100%;
+    float: left;
+    display: inline;
+    position: relative;
+  }
+.c-m1 .first{
+    border-right: 1px dotted #dbdbdb;
+}
+.c-m1 .product a{
+    display: block;
+    text-decoration: none;
+}
+.c-m1 .product .subscribeBtn,
+.c-m1 .product .subscribeDesc,
+.c-m1 .product .subscribeCounter{
+    position: absolute;
+    z-index: 2;
+}
+.c-m1 .product .subscribeDesc{
+    left: 9.5px;
+    bottom: 40px;
+    width: 225px;
+    height: 50px;
+}
+.c-m1 .product .subscribeDesc .desc{
+    float: left;
+    display: block;
+    border-top: 3px solid #dbdbdb;
+    border-right: 1px solid #f5f4f3;
+    text-align: center;
+    height: 47px;
+    color: #aeaeae;
+    width: 74px;
+}
+.c-m1 .product .subscribeDesc .desc ins{
+    display: block;
+    text-decoration: none;
+}
+.c-m1 .product .subscribeCounter{
+    bottom: 115px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    color: #fff;
+    text-align: center;
+    background: #000;
+}
+.c-m1 .product .subscribeBtn{
+    display: block;
+    width: 93px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    right: 5px;
+    bottom: 5px;
+    text-indent: -10000px;
+    cursor: pointer;
+}
