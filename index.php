@@ -36,10 +36,16 @@
     global $dpl_dir;
     $handle = fopen($dpl_dir.'/'."categories.md", 'r');
     $buffers = array();
+    $len = filesize($dpl_dir.'/'."categories.md");
+    if((int)$len < 2){
+        return $buffers;
+    }
     if ($handle) {
-        while (($buffer = fgets($handle, filesize($dpl_dir.'/'."categories.md"))) !== false) {
-           $type = preg_split("/\s/", $buffer);
-           array_push($buffers, json_encode(array("name"=>$type[1], "id"=>$type[0])));
+        while (($buffer = fgets($handle, $len)) !== false) {
+           if(strlen(trim($buffer)) > 2){
+            $type = preg_split("/\s/", $buffer);
+            array_push($buffers, json_encode(array("name"=>$type[1], "id"=>$type[0])));
+           }
         }
         if (!feof($handle)) {
             echo "靠！发生了怪异的事情，找颂赞吧";

@@ -31,8 +31,10 @@ function getCategories(){
     }
     if ($handle) {
         while (($buffer = fgets($handle, $len)) !== false) {
-           $type = preg_split("/\s/", $buffer);
-           array_push($buffers, json_encode(array("name"=>$type[1], "id"=>$type[0])));
+           if(strlen(trim($buffer)) > 2){
+            $type = preg_split("/\s/", $buffer);
+            array_push($buffers, json_encode(array("name"=>$type[1], "id"=>$type[0])));
+           }
         }
         if (!feof($handle)) {
             echo "靠！发生了怪异的事情，找颂赞吧";
@@ -75,6 +77,16 @@ function getCategories(){
         exit("新增分类失败");
       }
 
+      exit;
+    }
+
+    //检查模版文件夹是否重名
+    if($action == "check_tem_name"){
+      if(is_dir($dpl_dir."/".$en_name)){
+          echo "yes";
+      }else{
+          echo "no";
+      }
       exit;
     }
 ?>
@@ -306,6 +318,34 @@ $('#J-save').click(function (e){
             }
         }
     });
+});
+
+$('#J-submit').click(function (e){
+  var types = $('[name=type]');
+  if(types.length <= 0){
+      $('#J-types').find('.alert-error').remove();
+      $('#J-types').prepend("<div class=\"alert alert-error\">如果没有模版分类，你就新增一个</div>");
+      window.scroll(0, 0);
+      return false;
+  }
+});
+
+$('input[name=en_name]').blur(function (){
+  var val = $.trim($(this).val());
+  var node = $(this);
+  $(this).val(val);
+  $.ajax("submit_tem.php", {
+      type: "post",
+      data: "action=check_tem_name&en_name="+val+"",
+      success: function (data){
+          data = $.trim(data);
+          node.parent().find('.alert').remove();
+          if(data === "yes"){
+              node.after("<div class=\"alert alert-error\" style=\"margin-top:5px;\">模版文件夹重命啦！</div>");
+              node.focus();
+          }
+      }
+  });
 });
 </script>
 </body>
