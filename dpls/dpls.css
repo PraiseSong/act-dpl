@@ -11,7 +11,7 @@
 
 .c-m1{
     width: 490px;
-    height: 354px;
+    height: 350px;
 }
 .c-m1 .product{
     width: 244px;
@@ -19,6 +19,7 @@
     float: left;
     display: inline;
     position: relative;
+    background: #fff;
   }
 .c-m1 .first{
     border-right: 1px dotted #dbdbdb;
@@ -26,6 +27,11 @@
 .c-m1 .product a{
     display: block;
     text-decoration: none;
+    height: 100%;
+    overflow: hidden;
+}
+.c-m1 .product a:hover .status{
+    display: block;
 }
 .c-m1 .product .subscribeBtn,
 .c-m1 .product .subscribeDesc,
@@ -33,11 +39,28 @@
     position: absolute;
     z-index: 2;
 }
+.c-m1 .product .status{
+    background: #57b6ff;
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    font-size: 14px;
+    display: none;
+}
 .c-m1 .product .subscribeDesc{
     left: 9.5px;
     bottom: 40px;
     width: 225px;
-    height: 50px;
+    height: 45px;
+    overflow: hidden;
+    background: #fff;
 }
 .c-m1 .product .subscribeDesc .desc{
     float: left;
@@ -49,19 +72,28 @@
     color: #aeaeae;
     width: 74px;
 }
+.c-m1 .product .subscribeDesc .desc.last{
+    border-right: none;
+}
 .c-m1 .product .subscribeDesc .desc ins{
     display: block;
     text-decoration: none;
 }
+.c-m1 .product .subscribeDesc .active{
+    border-top-color: #4db4ff;
+}
 .c-m1 .product .subscribeCounter{
-    bottom: 115px;
+    bottom: 85px;
     left: 0;
     width: 100%;
     height: 22px;
     line-height: 22px;
-    color: #fff;
+    color: #4db4ff;
     text-align: center;
-    background: #000;
+}
+.c-m1 .product .subscribeCounter ins{
+    font-weight: 700;
+    text-decoration: none;
 }
 .c-m1 .product .subscribeBtn{
     display: block;
@@ -73,4 +105,177 @@
     bottom: 5px;
     text-indent: -10000px;
     cursor: pointer;
+}
+
+
+
+
+
+
+.floatBox{
+    zoom: 1;
+}
+.floatBox:after{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.c-m2{
+    width: 490px;
+    height: 350px;
+}
+.c-m2 .product{
+    background: #fff;
+    width: 244px;
+    height: 349px;
+    float: left;
+    display: inline;
+    position: relative;
+    overflow: hidden;
+}
+.c-m2 .first{
+    border-right: 1px dotted #dbdbdb;
+}
+.c-m2 .product a{
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    overflow: hidden;
+}
+.c-m2 .product .hitCounter{
+    position: absolute;
+    left: 0;
+    bottom: 25px;
+    z-index: 2;
+    width: 100%;
+    height: 13px;
+    line-height: 13px;
+    text-align: center;
+    text-decoration: none;
+    color: #b4b4b4;
+}
+.c-m2 .product .people{
+    text-decoration: none;
+    color: #ff793a;
+    font-size: 14px;
+    padding: 0 3px;
+}
+.c-m2 .product .l{
+    text-decoration: none;
+    background: url(http://img03.taobaocdn.com/tps/i3/T1uCeGXy4fXXcPKFza-17-12.jpg) no-repeat left center;
+    padding-left: 20px;
+}
+.c-m2 .product .hit{
+    display: block;
+    width: 109px;
+    height: 109px;
+    position: absolute;
+    z-index: 2;
+    left: 67.5px;
+    top: 120.5px;
+    cursor: pointer;
+    text-indent: -10000px;
+    background: url(http://img02.taobaocdn.com/tps/i2/T1fYOHXCVfXXbIJlZw-109-109.png) no-repeat;
+    *background: url(http://img02.taobaocdn.com/tps/i2/T1Rr5JXtlbXXbxF8Zw-109-109.gif) no-repeat;
+}
+
+.c-m3{
+    background: #fff;
+    height: 46px;
+    width: 490px;
+    padding: 12px 0;
+}
+.c-m3 p{
+    line-height: 20px;
+    font-size: 14px;
+    color: #0095eb;
+    text-align: left;
+}
+.c-m3 ins{
+    padding: 0 2px;
+    color: #ff9642;
+    font-weight: 700;
+    text-decoration: none;
+}
+.c-m3 a{
+    text-decoration: none;
+    color: #6c6c6c;
+}
+
+.c-m4{
+    width: 490px;
+    height: 140px;
+    overflow: visible;
+    position: relative;
+    background: #fff;
+}
+.c-m4 .brand{
+    background: url(http://img03.taobaocdn.com/tps/i3/T1He1IXpNdXXXKY67m-212-150.gif) no-repeat;
+    width: 212px;
+    height: 150px;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    left: 0;
+    top: -5px;
+}
+.c-m4 .brand img{
+    width: 207px;
+    height: 145px;
+}
+.c-m4 .product{
+    float: right;
+    padding: 15px 0 1px 0;
+    width: 278px;
+}
+.c-m4 .product:hover{
+    text-decoration: none;
+}
+.c-m4 .product .desc{
+    float: right;
+    font-size: 14px;
+    text-align: right;
+}
+.c-m4 .product .desc span{
+    display: block;
+}
+.c-m4 .product img{
+    float: right;
+    margin-left: 17px;
+    width: 100px;
+    height: 106px;
+}
+.c-m4 .product .name{
+    color: #333;
+}
+.c-m4 .product .price{
+    margin: 3px 0 0;
+}
+.c-m4 .product .price ins,
+.c-m4 .product .price del{
+    display: block;
+    font-size: 12px;
+}
+.c-m4 .product .price del{
+    color: #333;
+}
+.c-m4 .product .price ins{
+    text-decoration: none;
+    color: #ff6f2b;
+}
+.c-m4 .product .time{
+    background: #ff9642 url(http://img03.taobaocdn.com/tps/i3/T1JDeJXsVXXXbue2ba-21-21.jpg) no-repeat;
+    color: #fff;
+    padding: 0 7px 0 26px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 21px;
+    height: 21px;
+    margin-top: 28px;
+}
+.c-m4 .product .price ins s{
+    font-size: 22px;
+    text-decoration: none;
 }

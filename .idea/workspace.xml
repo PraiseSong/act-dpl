@@ -22,10 +22,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="submit_tem.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/submit_tem.php">
+      <file leaf-file-name="dpls.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dpls/dpls.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="377" column="77" selection-start="11415" selection-end="11415" vertical-scroll-proportion="0.6858345">
+            <state line="211" column="20" selection-start="3922" selection-end="3922" vertical-scroll-proportion="0.022038568">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dpls.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dpls/dpls.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="303" column="14" selection-start="16339" selection-end="16339" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -41,11 +50,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/dpls/dpls.css" />
         <option value="$PROJECT_DIR$/dpl-html/productsShow/dpl1.html" />
         <option value="$PROJECT_DIR$/dpl-css/productsShow/dpl1.css" />
         <option value="$PROJECT_DIR$/dpl-js/productsShow/dpl1.js" />
-        <option value="$PROJECT_DIR$/dpls/dpls.html" />
         <option value="$PROJECT_DIR$/css/dpl.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/submit_tem.html" />
@@ -56,6 +63,8 @@
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/dpl.js" />
         <option value="$PROJECT_DIR$/dpl/categories.md" />
+        <option value="$PROJECT_DIR$/dpls/dpls.html" />
+        <option value="$PROJECT_DIR$/dpls/dpls.css" />
         <option value="$PROJECT_DIR$/submit_tem.php" />
       </list>
     </option>
@@ -129,7 +138,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dpl" />
+              <option name="myItemId" value="dpls" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -146,10 +155,6 @@
               <option name="myItemId" value="dpl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6440ce3213f73e1a3723825c72008cb5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -158,7 +163,7 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="File.Encoding" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="options.searchVisible" value="true" />
@@ -376,7 +381,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2898135" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30703014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -459,56 +464,56 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dpl/head.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="177" column="22" selection-start="11080" selection-end="11080" vertical-scroll-proportion="0.973352">
-          <folding />
-        </state>
+        <state line="177" column="22" selection-start="11080" selection-end="11080" vertical-scroll-proportion="0.973352" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dpl/footer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="7" selection-start="4317" selection-end="4317" vertical-scroll-proportion="0.973352">
-          <folding />
-        </state>
+        <state line="70" column="7" selection-start="4317" selection-end="4317" vertical-scroll-proportion="0.973352" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/dpl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="63" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.52875173">
-          <folding />
-        </state>
+        <state line="92" column="63" selection-start="2400" selection-end="2400" vertical-scroll-proportion="0.52875173" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dpl/categories.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="64" selection-start="2559" selection-end="2584" vertical-scroll-proportion="0.2917251">
-          <folding />
-        </state>
+        <state line="78" column="64" selection-start="2559" selection-end="2584" vertical-scroll-proportion="0.2917251" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dpls/dpls.css">
+    <entry file="file://$PROJECT_DIR$/ZeroClipboard-1.1.7/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="23" selection-start="0" selection-end="1385" vertical-scroll-proportion="0.22865014">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dpls/rwd-common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dpls/dpls.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="14" selection-start="11243" selection-end="13053" vertical-scroll-proportion="0.55813956">
+        <state line="303" column="14" selection-start="16339" selection-end="16339" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/submit_tem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="377" column="77" selection-start="11415" selection-end="11415" vertical-scroll-proportion="0.6858345">
+        <state line="25" column="18" selection-start="475" selection-end="475" vertical-scroll-proportion="0.5610098">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dpls/dpls.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="211" column="20" selection-start="3922" selection-end="3922" vertical-scroll-proportion="0.022038568">
           <folding />
         </state>
       </provider>

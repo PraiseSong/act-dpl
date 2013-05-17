@@ -22,6 +22,10 @@ if(!$js){
   $js = "该模版没有js代码";
 }
 
+if(!$tms){
+  $tms = "该模版没有tms代码";
+}
+
 function getCategories(){
     global $dpl_dir;
     $handle = fopen($dpl_dir.'/'."categories.md", 'r');
