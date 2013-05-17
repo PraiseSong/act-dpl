@@ -25,7 +25,7 @@
       <file leaf-file-name="dpls.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dpls/dpls.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="211" column="20" selection-start="3922" selection-end="3922" vertical-scroll-proportion="0.022038568">
+            <state line="12" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.2644628">
               <folding />
             </state>
           </provider>
@@ -34,7 +34,7 @@
       <file leaf-file-name="dpls.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dpls/dpls.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="303" column="14" selection-start="16339" selection-end="16339" vertical-scroll-proportion="0.0">
+            <state line="185" column="0" selection-start="11240" selection-end="11240" vertical-scroll-proportion="-4.48">
               <folding />
             </state>
           </provider>
@@ -60,12 +60,12 @@
         <option value="$PROJECT_DIR$/dpl/songzan/self.script" />
         <option value="$PROJECT_DIR$/dpl/head.php" />
         <option value="$PROJECT_DIR$/dpl/footer.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/dpl.js" />
         <option value="$PROJECT_DIR$/dpl/categories.md" />
+        <option value="$PROJECT_DIR$/submit_tem.php" />
         <option value="$PROJECT_DIR$/dpls/dpls.html" />
         <option value="$PROJECT_DIR$/dpls/dpls.css" />
-        <option value="$PROJECT_DIR$/submit_tem.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -139,20 +139,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dpls" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bootstrap" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="act-dpl" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dpl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -482,11 +468,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="64" selection-start="2559" selection-end="2584" vertical-scroll-proportion="0.2917251" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ZeroClipboard-1.1.7/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -497,13 +478,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dpls/dpls.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="303" column="14" selection-start="16339" selection-end="16339" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/submit_tem.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="18" selection-start="475" selection-end="475" vertical-scroll-proportion="0.5610098">
@@ -511,9 +485,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dpls/dpls.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="185" column="0" selection-start="11240" selection-end="11240" vertical-scroll-proportion="-4.48">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="27" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.8078541">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dpls/dpls.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="211" column="20" selection-start="3922" selection-end="3922" vertical-scroll-proportion="0.022038568">
+        <state line="12" column="0" selection-start="12" selection-end="12" vertical-scroll-proportion="0.2644628">
           <folding />
         </state>
       </provider>
