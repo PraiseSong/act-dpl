@@ -64,7 +64,6 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="js/jquery.js"></script>
-    <link rel="stylesheet" href="codemirror-3.12/lib/codemirror.css" />
     <link href="css/dpl.css" rel="stylesheet" media="screen">
     <script type="text/javascript" src="Zeroclipboard-1.1.7/ZeroClipboard.min.js"></script>
     <script type="text/javascript">
@@ -126,7 +125,7 @@
                    foreach($tems_config as $k => $config){
                        if($config->type == $category->id){
                            echo "<li class=\"span4\">
-                                    <a href=\"#\" class=\"thumbnail\" title=\"{$config->name}\" data-type=\"{$config->type}\" data-id=\"{$config->en_name}\">
+                                    <a href=\"#\" class=\"thumbnail\" title=\"{$config->name}\" data-type=\"{$config->type}\" data-id=\"{$config->en_name}\" data-author=\"{$config->author}\">
                                         <img data-src=\"holder.js/360x270\" alt=\"360x270\" src=\"{$config->thumb}\" />
                                     </a>
                                  </li>";
@@ -171,6 +170,7 @@
     </div>
     <div class="modal-footer">
         <span class="label label-success" id="J-copied-tip">拷贝成功</span>
+        <a href="#" class="btn btn-warning" id="J-update">更新模版</a>
         <a href="#" class="btn" data-dismiss="modal" aria-hidden="true">Close</a>
         <a href="#" class="btn btn-primary" id="J-copy-css-tms">Copy CSS & TMS</a>
     </div>

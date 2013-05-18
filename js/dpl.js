@@ -5,9 +5,11 @@
  * Time: 4:48 PM
  * To change this template use File | Settings | File Templates.
  */
+var currentDpl = null;
 $('.thumbnail').click(function (e){
     e.preventDefault();
     var dpl = $(this);
+    currentDpl = dpl;
     var id = dpl.attr("data-id");
     var type = dpl.attr("data-type");
     updateLoading('正在加载模版资源...');
@@ -22,6 +24,47 @@ $('.thumbnail').click(function (e){
             });
         });
     });
+});
+
+$('#J-update').click(function (e){
+    e.preventDefault();
+    if(!currentDpl){return;}
+    var author = currentDpl.attr("data-author");
+    var id = currentDpl.attr("data-id");
+    var confirm = window.confirm("亲，您确认更新 "+author+" 创建的这个模版");
+    if(confirm){
+        insetTip("更新中...", "loading");
+        var html = $.trim($('#html textarea').val());
+        var css = $.trim($('#css textarea').val());
+        var js = $.trim($('#js textarea').val());
+        var tms = $.trim($('#tms textarea').val());
+        $.ajax("update_tem.php", {
+            type: "post",
+            dataType: "json",
+            data: "id="+id+"&html="+encodeURIComponent(html)+"&tms="+encodeURIComponent(tms)+"&js="+encodeURIComponent(js)+"&css="+encodeURIComponent(css)+"",
+            success: function (data){
+                if(data.msg){
+                    return insetTip(data.msg, "error");
+                }else{
+                    return insetTip("更新成功，建议预览确认一下", "success");
+                }
+            }
+        });
+
+        function insetTip(text, type){
+            $('#J-update').parent().find(".tip").remove();
+            var html = "";
+
+            if(type === "success"){
+                html = "<span class=\"label label-success tip\" style=\"margin-right: 5px;\">"+text+"</span>";
+            }else if(type === "error"){
+                html = "<span class=\"label label-important tip\" style=\"margin-right: 5px;\">"+text+"</span>";
+            }else if(type === "loading"){
+                html = "<span class=\"label tip\" style=\"margin-right:5px;\">"+text+"</span>";
+            }
+            $('#J-update').before(html);
+        }
+    }
 });
 
 function getHTML(type, id, callback){
