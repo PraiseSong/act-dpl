@@ -134,6 +134,7 @@ function showPop(title, id){
     $('#J_modal_tab a:first').tab('show');
     $("#J-copied-tip").css("visibility", "hidden");
     id && $('#J-preview').attr("href", "dpl/"+id+"/preview.html");
+    $('#J-update').parent().find(".tip").remove();
 }
 
 function appendContent(content){
