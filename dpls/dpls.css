@@ -106,7 +106,7 @@
 }
 .c-m2{
     width: 490px;
-    height: 350px;
+    height: 351px;
     background: #fff;
 }
 .c-m2 .product{
@@ -281,11 +281,11 @@
 .group1{
     padding-bottom: 30px;
     margin-bottom: 30px;
-    padding: 5px 0 0 5px;
+    padding: 5px 0 0 0;
 }
 .brands .brand{
     float: left;
 }
-.brands .brand.first{
+.brands .brand.fi{
     margin-right: 10px;
 }
