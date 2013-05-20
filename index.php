@@ -170,6 +170,7 @@
     </div>
     <div class="modal-footer">
         <span class="label label-success" id="J-copied-tip">拷贝成功</span>
+        <a href="#" class="btn btn-danger" id="J-delete">删除模版</a>
         <a href="#" class="btn btn-warning" id="J-update">更新模版</a>
         <a href="#" class="btn" data-dismiss="modal" aria-hidden="true">Close</a>
         <a href="#" class="btn btn-primary" id="J-copy-css-tms">Copy CSS & TMS</a>

@@ -67,6 +67,43 @@ $('#J-update').click(function (e){
     }
 });
 
+$('#J-delete').click(function (e){
+    e.preventDefault();
+    if(!currentDpl){return;}
+    var author = currentDpl.attr("data-author");
+    var id = currentDpl.attr("data-id");
+    var confirm = window.confirm("亲，您确认更新 "+author+" 创建的这个模版");
+    if(confirm){
+        insetTip("删除中...", "loading");
+        $.ajax("delete.php", {
+            type: "post",
+            data: "id="+id+"",
+            success: function (data){
+                if(data === "no"){
+                    return insetTip("操作失败", "error");
+                }else{
+                    setTimeout(function (){location.reload();}, 2000);
+                    return insetTip("OK,2秒后自动刷新", "success");
+                }
+            }
+        });
+
+        function insetTip(text, type){
+            $('#J-delete').parent().find(".tip").remove();
+            var html = "";
+
+            if(type === "success"){
+                html = "<span class=\"label label-success tip\" style=\"margin-left: 5px;float: left;\">"+text+"</span>";
+            }else if(type === "error"){
+                html = "<span class=\"label label-important tip\" style=\"margin-left: 5px;float: left;\">"+text+"</span>";
+            }else if(type === "loading"){
+                html = "<span class=\"label tip\" style=\"margin-left:5px;float: left;\">"+text+"</span>";
+            }
+            $('#J-update').after(html);
+        }
+    }
+});
+
 function getHTML(type, id, callback){
     $.get("dpl/"+id+"/self.html?t="+new Date().getTime(), function (html){
         updateLoading("已获取html模版...");
