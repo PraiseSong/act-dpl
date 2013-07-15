@@ -1,0 +1,108 @@
+.floatBox{
+    zoom: 1;
+}
+.floatBox:after{
+    display: block;
+    clear: both;
+    content: "";
+    visibility: hidden;
+    height: 0;
+}
+.c-m1{
+    width: 490px;
+    height: 350px;
+    background: #fff;
+}
+.c-m1 .product{
+    width: 244px;
+    height: 100%;
+    float: left;
+    display: inline;
+    position: relative;
+    background: #fff;
+}
+.c-m1 .f{
+    border-right: 1px dotted #dbdbdb;
+}
+.c-m1 .product a{
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    overflow: hidden;
+}
+.c-m1 .product a:hover .status{
+    display: block;
+}
+.c-m1 .product .subscribeBtn,
+.c-m1 .product .subscribeDesc,
+.c-m1 .product .subscribeCounter{
+    position: absolute;
+    z-index: 2;
+}
+.c-m1 .product .status{
+    background: #57b6ff;
+    color: #fff;
+    text-align: center;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    font-size: 14px;
+    display: none;
+}
+.c-m1 .product .subscribeDesc{
+    left: 9.5px;
+    bottom: 40px;
+    width: 225px;
+    height: 45px;
+    overflow: hidden;
+    background: #fff;
+}
+.c-m1 .product .subscribeDesc .desc{
+    float: left;
+    display: block;
+    border-top: 3px solid #dbdbdb;
+    border-right: 1px solid #f5f4f3;
+    text-align: center;
+    height: 47px;
+    color: #aeaeae;
+    width: 74px;
+}
+.c-m1 .product .subscribeDesc .desc.last{
+    border-right: none;
+}
+.c-m1 .product .subscribeDesc .desc ins{
+    display: block;
+    text-decoration: none;
+}
+.c-m1 .product .subscribeDesc .active{
+    border-top-color: #4db4ff;
+}
+.c-m1 .product .subscribeCounter{
+    bottom: 85px;
+    left: 0;
+    width: 100%;
+    height: 22px;
+    line-height: 22px;
+    color: #4db4ff;
+    text-align: center;
+}
+.c-m1 .product .subscribeCounter ins{
+    font-weight: 700;
+    text-decoration: none;
+}
+.c-m1 .product .subscribeBtn{
+    display: block;
+    width: 93px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    right: 5px;
+    bottom: 5px;
+    text-indent: -10000px;
+    cursor: pointer;
+}

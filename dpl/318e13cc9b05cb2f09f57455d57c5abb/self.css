@@ -1,0 +1,60 @@
+.c-m4{
+    width: 490px;
+    height: 140px;
+    overflow: visible;
+    position: relative;
+    background: #fff;
+}
+.c-m4 .brand{
+    background: url(http://img03.taobaocdn.com/tps/i3/T1He1IXpNdXXXKY67m-212-150.gif) no-repeat;
+    width: 212px;
+    height: 150px;
+    position: absolute;
+    display: block;
+    z-index: 2;
+    left: -5px;
+    top: -5px;
+}
+.c-m4 .brand img{
+    width: 207px;
+    height: 145px;
+}
+.c-m4 .product{
+    float: right;
+    padding: 0 0 1px 0;
+    width: 278px;
+    position: relative;
+}
+.c-m4 .product:hover{
+    text-decoration: none;
+}
+.c-m4 .product .desc{
+    font-size: 14px;
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 160px;
+}
+.c-m4 .product .desc span{
+    display: block;
+}
+.c-m4 .product img{
+    float: right;
+    width: 278px;
+    height: 140px;
+}
+.c-m4 .product .time{
+    background: #ff9642 url(http://img03.taobaocdn.com/tps/i3/T1JDeJXsVXXXbue2ba-21-21.jpg) no-repeat;
+    color: #fff;
+    padding: 0 7px 0 26px;
+    font-size: 12px;
+    text-align: left;
+    line-height: 21px;
+    height: 21px;
+    margin-top: 28px;
+}
+.c-m4 .product .price ins s{
+    font-size: 22px;
+    text-decoration: none;
+}

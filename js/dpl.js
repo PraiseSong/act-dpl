@@ -13,7 +13,7 @@ $('.thumbnail').click(function (e){
     var id = dpl.attr("data-id");
     var type = dpl.attr("data-type");
     updateLoading('正在加载模版资源...');
-    showPop($(this).attr("title"), id);
+    showPop($(this).attr("title")+"(作者:"+currentDpl.attr("data-author")+")", id);
 
     getHTML(type, id, function (){
         getCSS(type, id, function (){

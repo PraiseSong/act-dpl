@@ -1,0 +1,22 @@
+.c-m3{
+    background: #fff;
+    height: 46px;
+    width: 460px;
+    padding: 12px 15px;
+}
+.c-m3 p{
+    line-height: 20px;
+    font-size: 14px;
+    color: #0095eb;
+    text-align: left;
+}
+.c-m3 ins{
+    padding: 0 2px;
+    color: #ff9642;
+    font-weight: 700;
+    text-decoration: none;
+}
+.c-m3 a{
+    text-decoration: none;
+    color: #6c6c6c;
+}

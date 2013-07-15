@@ -1,5 +1,5 @@
 <?php
-  ini_set("display_errors", "1");
+  ini_set("display_errors", "0");
   error_reporting(E_ALL);
 
   $dpl_dir = "dpl";
@@ -65,12 +65,12 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <script src="js/jquery.js"></script>
     <link href="css/dpl.css" rel="stylesheet" media="screen">
-    <script type="text/javascript" src="Zeroclipboard-1.1.7/ZeroClipboard.min.js"></script>
+    <script type="text/javascript" src="zc/zc.min.js"></script>
     <script type="text/javascript">
         var copyCssHtml;
         var copyCssTms;
         $(document).ready(function (){
-            copyCssTms = new ZeroClipboard( $("#J-copy-css-tms"), { moviePath: "zeroclipboard-1.1.7/ZeroClipboard.swf", useNoCache:true });
+            copyCssTms = new ZeroClipboard( $("#J-copy-css-tms"), { moviePath: "zc/zc.swf", useNoCache:true });
             copyCssTms.on('noFlash', function (client) {
                 alert("亲，您的浏览器没有安装flash，拷贝功能是基于flash的，你懂得！");
             });

@@ -1,0 +1,45 @@
+<div class="c-m1 floatBox">
+                            <div class="product first">
+                                <a href="#" class="detail">
+                                    <span class="status">无需再砍，已是最低价！</span>
+                                    <span class="subscribeCounter"><ins>2374人</ins>预订</span>
+                                    <img src="http://img02.taobaocdn.com/tps/i2/T1w7OGXuFgXXcwhqPe-244-350.jpg" alt="" />
+                    <span class="subscribeDesc floatBox">
+                        <span class="desc">
+                            <ins>满1个</ins>
+                            <ins>¥1880</ins>
+                        </span>
+                        <span class="desc">
+                            <ins>满10个</ins>
+                            <ins>¥180</ins>
+                        </span>
+                        <span class="desc active last">
+                            <ins>满1000个</ins>
+                            <ins>¥10</ins>
+                        </span>
+                    </span>
+                                </a>
+                            </div>
+                            <div class="product">
+                                <a href="#" class="detail">
+                                    <span class="status">无需再砍，已是最低价！</span>
+                                    <span class="subscribeCounter"><ins>23744545</ins>人预订</span>
+                                    <img src="http://img02.taobaocdn.com/tps/i2/T1w7OGXuFgXXcwhqPe-244-350.jpg" alt="" />
+                    <span class="subscribeDesc floatBox">
+                        <span class="desc">
+                            <ins>满1个</ins>
+                            <ins>¥1880</ins>
+                        </span>
+                        <span class="desc active">
+                            <ins>满10个</ins>
+                            <ins>¥180</ins>
+                        </span>
+                        <span class="desc last">
+                            <ins>满1000个</ins>
+                            <ins>¥10</ins>
+                        </span>
+                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
